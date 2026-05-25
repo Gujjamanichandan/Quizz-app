@@ -1,6 +1,9 @@
+import java.util.Scanner;
+
 public class QutionService {
 
     Questions[] questions = new Questions[5];
+    String selection[] = new String[5];
 
     public QutionService() {
         questions[0] = new Questions(1, "Which data type in Java is 8 bytes (64-bit)?", "int", "long", "float", "char",
@@ -21,10 +24,21 @@ public class QutionService {
     }
 
     public void displayQuestions(){
+        int i = 0;
 
        for( Questions q: questions){
-        System.out.println(q);
-       }
+        System.out.println(" Question number:"+q.getId());
+        System.out.println(q.getQuestion());
+        System.out.println(q.getOpt1());
+        System.out.println(q.getOpt2());
+        System.out.println(q.getOpt3());
+        System.out.println(q.getOpt4());
+
+        Scanner sc = new Scanner(System.in);
+
+        selection[i] = sc.nextLine();
+        i++;
+      }
 
     }
 
