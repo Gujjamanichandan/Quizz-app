@@ -4,6 +4,7 @@ public class Main{
 
         QutionService service = new QutionService();
         service.displayQuestions();
+        service.displayScore();
 
     }
 }
