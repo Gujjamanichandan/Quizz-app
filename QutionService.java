@@ -40,6 +40,12 @@ public class QutionService {
         i++;
       }
 
-    }
+      for(String s: selection){
+        System.out.println(s);
+      }
 
+
+    }
 }
+
+
